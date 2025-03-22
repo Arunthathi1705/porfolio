@@ -1,0 +1,134 @@
+.home {
+    background-color: black;
+    height: calc(100vh - 3rem);
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+
+
+}
+
+
+.homeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+}
+
+
+.homeName {
+    color: yellow;
+    font-size: 2rem;
+    font-weight: 100;
+
+}
+
+.hello {
+    color: white;
+    font-size: 1rem;
+    font-weight: 50;
+}
+
+.homeText {
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+
+}
+
+
+.homePara {
+    color: white;
+    font-size: 0.8rem;
+
+}
+
+.hello,
+.homeText {
+    display: block;
+}
+
+.profileImage {
+    object-fit: cover;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    right: 100px;
+    top: 150px;
+    outline: 0.3rem solid rgb(202, 197, 197)
+}
+
+
+.hirebtn {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 0.5rem 0.75rem;
+    padding-right: 20px;
+    border: none;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.hire {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+
+}
+
+.hirebtn a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+
+
+@media screen and (max-width: 580px) {
+    .profileImage {
+        width: 300px;
+        outline: 10px solid rgb(157, 172, 172);
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+}
+
+@media screen and (max-width:340px) {
+
+    .profileImage {
+        width: 300px;
+        outline: 10px solid rgb(157, 172, 172);
+        position: static;
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    .homeContent {
+        bottom: 50px;
+        left: 20px;
+    }
+
+
+    .homeText,
+    .homeName {
+        font-size: 1.5rem;
+    }
+}
