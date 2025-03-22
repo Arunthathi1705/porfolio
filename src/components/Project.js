@@ -58,7 +58,7 @@ const Project = () => {
               : "View Output"
             }
           </button>
-          <a href="https://github.com/Arunthathi1705/calculator-react.git" target="_blank" rel="noopener noreferrer" >
+          <a href="https://github.com/Arunthathi1705/porfolio.git" target="_blank" rel="noopener noreferrer" >
             <button className="gitButton"><img src={gitImage} alt="github" className='gitImage' />GitHub</button>
           </a>
         </div>
