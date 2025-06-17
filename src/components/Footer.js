@@ -4,7 +4,7 @@ import "./../styles/Footer.css"
 const Footer = () => {
   return (
     <footer className="footer">
-      &#169; 2025 Arunthathi. All Rights Reserved
+      &#169; 2025 Akalya. All Rights Reserved
     </footer>
   )
 }
