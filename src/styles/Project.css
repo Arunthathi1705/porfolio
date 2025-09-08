@@ -24,37 +24,47 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 5%;
+    padding: 20px;
     text-align: center;
     width: 80%;
     max-width: 100vw;
-
-
 }
 
 .projectDescription h1 {
     display: block;
     color: yellow;
-    padding-top: 3rem;
     padding-bottom: 0.5rem;
 }
 
 .projectDescription p {
     font-size: 0.75rem;
     font-weight: 400;
-    line-height: 1.3;
+
+}
+
+.projectSection {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.projectBox h2 {
+    padding: 10px;
+    color: rgb(37, 37, 96);
 }
 
 .projectBox {
-    background: rgb(228, 220, 220);
+    background-image: radial-gradient(white, rgb(79, 79, 79));
     color: black;
-    width: 90%;
-    max-width: 500px;
-    padding: 20px;
+    max-width: 300px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
     text-align: center;
-    margin: 30px auto;
     font-size: 0.75rem;
 }
 
@@ -83,34 +93,20 @@
     cursor: pointer;
 }
 
-.blueButton {
-    padding: 10px 13px;
-}
+
 
 
 .blueButton,
-.gitButton {
-    background: #007bff;
+.demoButton {
+    font-family: "poppins";
+    font-weight: 500;
+    padding: 10px 13px;
+    background: #134984c1;
 }
 
-.blueButton:hover {
-    background-color: #0056b3;
-}
-
-
-.yellowButton {
-    background: rgb(228, 220, 220);
-    color: black;
-}
-
-.yellowButton:hover {
-    background-color: rgb(247, 247, 4);
-}
-
-
-.gitButton:hover {
-    background-color: #0056b3;
-
+.blueButton:hover,
+.demoButton:hover {
+    background-color: #11365f;
 }
 
 .buttonContainer a {
@@ -124,24 +120,23 @@
 
 
 .projectImage {
-    width: 200px;
-    height: 250px;
-    margin-top: 15px;
+    object-fit: contain;
+    margin-top: 20px;
 }
 
-.gitImage {
-    padding: 3px;
-    height: 25px;
-    width: 25px;
-}
-
-.gitButton {
-    padding: 4px 3px;
+.calcDescription {
+    margin-bottom: 30px;
 }
 
 
-@media screen and (max-width: 520px) {
-    .projectDescription {
-        width: 90%;
+@media screen and (max-width: 990px) {
+    .projectSection {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
     }
 }

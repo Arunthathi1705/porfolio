@@ -4,8 +4,13 @@
     width: 100vw;
     overflow: hidden;
     position: relative;
+}
 
-
+.homeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -13,30 +18,29 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 10px;
     position: absolute;
     bottom: 30px;
     left: 50px;
+
 }
 
 
 .homeName {
     color: yellow;
     font-size: 2rem;
-    font-weight: 100;
-
+    font-weight: 400;
 }
+
 
 .hello {
     color: white;
     font-size: 1rem;
-    font-weight: 50;
 }
 
 .homeText {
     color: white;
     font-size: 2rem;
-    font-weight: 100;
+    font-weight: 500;
 
 }
 
@@ -53,13 +57,28 @@
 }
 
 .profileImage {
-    object-fit: cover;
+    object-fit: contain;
     width: 250px;
-    border-radius: 50%;
+    border-radius: 0.3rem;
     position: absolute;
     right: 100px;
     top: 150px;
-    outline: 0.3rem solid rgb(202, 197, 197)
+    outline: 0.3rem solid rgb(117, 114, 114)
+}
+
+.resume {
+    position: absolute;
+    right: 270px;
+    top: 430px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 
@@ -89,46 +108,110 @@
 
 }
 
-
-
-@media screen and (max-width: 580px) {
-    .profileImage {
-        width: 300px;
-        outline: 10px solid rgb(157, 172, 172);
-        position: static;
-        display: block;
-        margin: 0 auto;
-    }
-
+@media screen and (max-width:840px) {
     .home {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px
+    }
 
+    .homeContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+
+    .profileImage {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        outline: 5px solid rgb(157, 172, 172);
+        margin-bottom: 20px;
+    }
+
+    .imageSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: static;
+    }
+
+    .homeContent {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        align-items: start;
+        margin: 80px 10px;
+    }
+
+    .resume {
+        position: static;
+        margin-top: 15px;
     }
 
 }
 
-@media screen and (max-width:340px) {
+
+
+@media screen and (max-width: 580px) {
+
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px
+    }
+
+    .homeContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
 
     .profileImage {
-        width: 300px;
-        outline: 10px solid rgb(157, 172, 172);
         position: static;
-        display: block;
-        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        outline: 5px solid rgb(157, 172, 172);
+        margin-bottom: 20px;
+    }
 
+    .imageSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: static;
     }
 
     .homeContent {
-        bottom: 50px;
-        left: 20px;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        align-items: start;
+        margin: 80px 10px;
     }
 
-
-    .homeText,
-    .homeName {
-        font-size: 1.5rem;
+    .resume {
+        position: static;
+        margin-top: 15px;
     }
+
 }

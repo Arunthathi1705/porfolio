@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
   height: 3rem;
   padding: 0.5rem 1rem;
   background-color: #282c34;
@@ -14,7 +15,7 @@
 
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
   color: yellow;
   display: flex;
@@ -22,7 +23,7 @@
 }
 
 .compLogo {
-  width: 40px;
+  width: 30px;
   height: 30px;
   margin-right: 10px;
 }
@@ -60,9 +61,9 @@
   position: fixed;
   top: 3.5rem;
   right: 1rem;
-  width: 100px;
-  height: 120px;
-  background: white;
+  width: 120px;
+  height: 140px;
+  background-image:radial-gradient(rgb(241, 236, 236),rgb(163, 162, 162));
   border-radius: 10px;
   padding: 10px;
   display: none;
@@ -88,13 +89,15 @@
 }
 
 .listItems li {
-  padding: 3px 0;
+  padding: 2px 0;
 }
 
 .listItems li a {
-  color: black;
+  line-height: 1.4;
+  color: rgba(35, 16, 89, 0.785);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 500;
 
 }
 

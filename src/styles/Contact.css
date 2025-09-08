@@ -19,7 +19,6 @@
 
 .contactTitle {
     color: yellow;
-
 }
 
 .contactDesc {
@@ -37,7 +36,9 @@
 
 }
 
-.name, .email, .msg {
+.name,
+.email,
+.msg {
     background-color: rgb(40, 40, 40);
     color: white;
     margin: 0.8rem;
@@ -66,7 +67,9 @@
 
 @media (max-width:680px) {
 
-    .name, .email, .msg{
+    .name,
+    .email,
+    .msg {
         background-color: rgb(40, 40, 40);
         color: white;
         margin: 0.8rem;
@@ -81,7 +84,9 @@
 
 @media (max-width:520px) {
 
-    .name, .email, .msg {
+    .name,
+    .email,
+    .msg {
         background-color: rgb(40, 40, 40);
         color: white;
         margin: 0.8rem;

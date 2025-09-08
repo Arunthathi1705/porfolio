@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./../styles/Navbar.css";
-import logoImage from '../components/Assets/comp.png';
+import logoImage from '../components/Assets/coding.png';
 import menuImage from '../components/Assets/menu.png';
 
 function Navbar() {
@@ -10,7 +10,7 @@ function Navbar() {
     <nav className="navbar">
 
       <h2 className="logo">
-        <img src={logoImage} alt="logo" className="compLogo" /> Portfolio
+        <img src={logoImage} alt="logo" className="compLogo" /> Arunthathi
       </h2>
 
       <ul className="nav-links">
