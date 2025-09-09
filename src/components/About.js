@@ -48,7 +48,7 @@ const About = () => {
           <img src={reactImg} alt="React" className="skillBarImg" />
           <div className="skillBarText">
             <h2> REACT-Interactive UI</h2>
-            <p>React.js is a JavaScript library for building fast, interactive, and reusable user interface components.</p>
+            <p>React.js is a JavaScript library for building fast, interactive, and reusable UI components. I have also learned Mantine UI to create modern and responsive designs efficiently.</p>
           </div>
         </div>
 

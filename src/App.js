@@ -1,4 +1,6 @@
 import React from "react";
+import "@fontsource/poppins"; 
+import "@fontsource/poppins/600.css"; 
 import Navbar from "./components/Navbar";
 import './App.css'
 import Home from "./components/Home";
@@ -12,7 +14,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Home />
+      <Home /> 
       <About />
       <Project />
       <Contact />

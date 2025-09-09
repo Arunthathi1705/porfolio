@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
   height: 3rem;
-  padding: 0.5rem 1rem;
-  background-color: #282c34;
-  color: white;
+  padding: 1rem 1rem;
+  background-color: #a8bfe5e7;
   position: fixed;
   top: 0;
   width: 100%;
@@ -14,9 +14,9 @@
 
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: yellow;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: rgba(15, 22, 63, 0.84);
   display: flex;
   align-items: center;
 }
@@ -37,14 +37,15 @@
 }
 
 .nav-links a {
-  color: white;
+  color: rgba(29, 29, 137, 0.562);
   text-decoration: none;
   font-size: 1rem;
+  font-weight: 500;
 }
 
 .nav-links a:hover,
 .nav-links a:active {
-  color: yellow;
+  color: rgb(20, 20, 103);
   text-decoration: underline;
 }
 
@@ -60,9 +61,9 @@
   position: fixed;
   top: 3.5rem;
   right: 1rem;
-  width: 100px;
-  height: 120px;
-  background: white;
+  width: 110px;
+  height: 140px;
+  background-image: radial-gradient(white, rgb(229, 227, 227));
   border-radius: 10px;
   padding: 10px;
   display: none;

@@ -6,8 +6,8 @@
 }
 
 #Contact {
-    background-color: black;
-    color: white;
+    background-color: rgb(239, 234, 234);
+    color: rgba(25, 36, 98, 0.84);
     min-height: calc(100vh - 3rem);
     width: 100vw;
     overflow: hidden;
@@ -18,13 +18,13 @@
 }
 
 .contactTitle {
-    color: yellow;
+    color: rgba(15, 22, 63, 0.84);
 
 }
 
 .contactDesc {
     font-size: 0.8rem;
-    font-weight: 300;
+    font-weight: 500;
     padding: 0.3rem;
 }
 
@@ -37,9 +37,12 @@
 
 }
 
-.name, .email, .msg {
-    background-color: rgb(40, 40, 40);
-    color: white;
+.name,
+.email,
+.msg {
+    background-color: rgba(220, 205, 205, 0.836);
+    color: rgba(15, 22, 63, 0.84);
+    font-weight: 500;
     margin: 0.8rem;
     width: 40rem;
     max-width: 60rem;
@@ -50,25 +53,27 @@
 }
 
 .submitBtn {
+    background-color: #a8bfe5d2;
+    color: rgba(25, 36, 98, 0.84);
     margin: 1rem;
     padding: 0.5rem 2rem;
     border-radius: 0.5rem;
     border: none;
     font-weight: bold;
-
-
 }
 
 .submitBtn:hover {
     cursor: pointer;
-    background-color: rgb(188, 183, 183);
+    background-color: #95acd0;
 }
 
 @media (max-width:680px) {
 
-    .name, .email, .msg{
-        background-color: rgb(40, 40, 40);
-        color: white;
+    .name,
+    .email,
+    .msg {
+        background-color: rgba(220, 205, 205, 0.836);
+        color: rgba(15, 22, 63, 0.84);
         margin: 0.8rem;
         width: 30rem;
         max-width: 50rem;
@@ -81,9 +86,11 @@
 
 @media (max-width:520px) {
 
-    .name, .email, .msg {
-        background-color: rgb(40, 40, 40);
-        color: white;
+    .name,
+    .email,
+    .msg {
+        background-color: rgba(220, 205, 205, 0.836);
+        color: rgba(15, 22, 63, 0.84);
         margin: 0.8rem;
         width: 20rem;
         max-width: 40rem;
