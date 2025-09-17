@@ -8,6 +8,7 @@
 
 .homeContent {
     display: flex;
+      max-width: 600px;
     flex-direction: column;
     align-items: start;
     gap: 10px;
@@ -45,10 +46,7 @@
 
 }
 
-.hello,
-.homeText {
-    display: block;
-}
+
 
 .profileImage {
     object-fit: cover;
@@ -114,11 +112,16 @@
         padding: 20px
     }
 
+
     .homeContainer {
         display: flex;
         flex-direction: column;
         width: 100%;
 
+    }
+
+    .homeText{
+        font-size: 1.5rem;
     }
 
 
@@ -142,11 +145,12 @@
 
     .homeContent {
         position: static;
+        gap:10px;
         display: flex;
         flex-direction: column;
         text-align: start;
         align-items: start;
-        margin: 80px 10px;
+        margin: 50px 10px;
     }
 
     .resume {
@@ -162,25 +166,49 @@
 
     .home {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        min-height: 100vh;
+        height: auto;
+        overflow: hidden;
+        justify-content: center; 
+        align-items: center; 
         flex-direction: column;
-        padding: 20px
+      
+    }
+
+    .hello{
+        font-size: 0.7rem;
+       
     }
 
     .homeContainer {
         display: flex;
         flex-direction: column;
         width: 100%;
-
     }
+
+    .homeName{
+        font-size:1.5rem ;
+        word-break: break-word;
+       
+    }
+
+    .homeText{
+        font-size: 1.3rem;
+        word-break: break-word;
+        line-height: 1.4;
+        
+    }
+
+    
+  
 
     .profileImage {
         position: static;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 300px;
+        width: 250px;
+        height:250px;
         border-radius: 10px;
         object-fit: cover;
         border: 5px solid rgb(157, 172, 172);
@@ -201,12 +229,15 @@
         flex-direction: column;
         text-align: start;
         align-items: start;
-        margin: 60px 10px;
+        gap:3px;
+        margin: 30px 10px;  
+        
     }
 
     .resume {
         position: static;
-        margin-top: 15px;
+        overflow: hidden;
+        margin-top: 10px;
     }
 
 }
