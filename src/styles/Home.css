@@ -53,7 +53,6 @@
 .profileImage {
     object-fit: cover;
     width: 250px;
-
     border-radius: 10px;
     position: absolute;
     right: 100px;
@@ -106,9 +105,7 @@
     transition: all 0.3s ease;
 }
 
-
-
-@media screen and (max-width: 580px) {
+@media screen and (max-width:840px) {
     .home {
         display: flex;
         justify-content: center;
@@ -117,13 +114,64 @@
         padding: 20px
     }
 
-    .imageSection {
+    .homeContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+
+    .profileImage {
         position: static;
+        
+        width: 300px;
+        border-radius: 10px;
+        object-fit: cover;
+        border: 5px solid rgb(157, 172, 172);
+        margin-bottom: 20px;
+    }
+
+    .imageSection {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 15rem;
+        position: static;
+    }
+
+    .homeContent {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        align-items: start;
+        margin: 80px 10px;
+    }
+
+    .resume {
+        position: static;
+        margin-top: 15px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 580px) {
+
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px
+    }
+
+    .homeContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
 
     }
 
@@ -132,40 +180,28 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 350px;
+        width: 300px;
+        border-radius: 10px;
         object-fit: cover;
-        outline: 5px solid rgb(157, 172, 172);
+        border: 5px solid rgb(157, 172, 172);
         margin-bottom: 20px;
     }
 
-    .resume {
+    .imageSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: static;
-        margin-top: 15px;
-    }
-
-
-}
-
-@media screen and (max-width:340px) {
-
-    .profileImage {
-        width: 300px;
-        outline: 10px solid rgb(157, 172, 172);
-        position: static;
-        display: block;
-        margin: 0 auto;
-
     }
 
     .homeContent {
-        bottom: 30px;
-        left: 20px;
-    }
-
-
-    .homeText,
-    .homeName {
-        font-size: 1.5rem;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        align-items: start;
+        margin: 60px 10px;
     }
 
     .resume {
@@ -174,3 +210,4 @@
     }
 
 }
+
