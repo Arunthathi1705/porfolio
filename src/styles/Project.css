@@ -33,6 +33,7 @@
 .projectDescription h1 {
     display: block;
     color: yellow;
+    padding-top: 1rem;
     padding-bottom: 0.5rem;
 }
 
@@ -44,13 +45,17 @@
 
 .projectSection {
     width: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+    max-width: 800px;   
+    margin: 0 auto;     
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center; 
     gap: 40px;
-    flex-direction: row;
-    align-items: flex-start;
+    align-items: start;
 }
+
+
 
 .projectBox h2 {
     padding: 10px;
@@ -60,13 +65,19 @@
 .projectBox {
     background-image: radial-gradient(white, rgb(79, 79, 79));
     color: black;
-    max-width: 300px;
+    width: 300px;                
+    min-height: 300px;            
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
     text-align: center;
     font-size: 0.75rem;
+
+    display: flex;                
+    flex-direction: column;       
+    justify-content: space-between; 
 }
+
 
 
 .buttonContainer {
@@ -131,12 +142,6 @@
 
 @media screen and (max-width: 990px) {
     .projectSection {
-        width: 100%;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;   
     }
 }

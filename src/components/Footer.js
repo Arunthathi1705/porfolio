@@ -1,3 +1,4 @@
+
 import React from 'react'
 import "./../styles/Footer.css";
 import linkedin from '../components/Assets/linkedin.png';
@@ -19,5 +20,7 @@ const Footer = () => {
     </footer>
   )
 }
+
+
 
 export default Footer
