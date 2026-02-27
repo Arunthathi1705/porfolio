@@ -128,7 +128,7 @@
 
 @media screen and (max-width: 990px) {
     .projectSection {
-        width: 100%;
+        width: 90%;
         padding: 10px;
         display: flex;
         justify-content: center;
@@ -136,4 +136,5 @@
         flex-direction: column;
         align-items: center;
     }
+    
 }

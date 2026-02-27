@@ -40,7 +40,7 @@
 .name,
 .email,
 .msg {
-    background-color: rgba(220, 205, 205, 0.836);
+    background-color:rgb(201, 200, 200);
     color: rgba(15, 22, 63, 0.84);
     font-weight: 500;
     margin: 0.8rem;
@@ -69,10 +69,13 @@
 
 @media (max-width:680px) {
 
+    .contactDesc{
+        text-align: center;
+    }
     .name,
     .email,
     .msg {
-        background-color: rgba(220, 205, 205, 0.836);
+        background-color: rgb(201, 200, 200);
         color: rgba(15, 22, 63, 0.84);
         margin: 0.8rem;
         width: 30rem;
@@ -85,14 +88,15 @@
 }
 
 @media (max-width:520px) {
+    
 
     .name,
     .email,
     .msg {
-        background-color: rgba(220, 205, 205, 0.836);
+        background-color: rgb(201, 200, 200);
         color: rgba(15, 22, 63, 0.84);
         margin: 0.8rem;
-        width: 20rem;
+        width: 15rem;
         max-width: 40rem;
         border: none;
         border-radius: 0.5rem;
