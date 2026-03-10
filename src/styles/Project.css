@@ -1,147 +1,174 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#Projects {
+    background-color: black;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
     overflow-x: hidden;
 }
 
 
-#Projects {
-    background-color: black;
-    min-height: calc(100vh - 3rem);
-    width: 100vw;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-
-}
-
 .projectDescription {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    width: 70%;
     text-align: center;
-    width: 80%;
-    max-width: 100vw;
+    color: rgb(200, 197, 197);
+    margin-bottom: 50px;
 }
 
 .projectDescription h1 {
-    display: block;
-    color: yellow;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: 10px;
+    color: white;
 }
 
 .projectDescription p {
-    font-size: 0.75rem;
-    font-weight: 400;
-
+    font-size: 1rem;
+    line-height: 1.6;
 }
+
+
 
 .projectSection {
     width: 100%;
-    max-width: 800px;   
-    margin: 0 auto;     
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
-    justify-content: center; 
-    gap: 40px;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
 
 
 
-.projectBox h2 {
-    padding: 10px;
-    color: rgb(37, 37, 96);
-}
 
 .projectBox {
-    background-image: radial-gradient(white, rgb(79, 79, 79));
-    color: black;
-    width: 300px;                
-    min-height: 300px;            
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
-    text-align: center;
-    font-size: 0.75rem;
-
-    display: flex;                
-    flex-direction: column;       
-    justify-content: space-between; 
+    width: 75%;
+    min-height: 300px;
+    background: #282c34;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 
 
-.buttonContainer {
+.leftSection {
+    width: 70%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 20px;
-    max-width: 100%;
-    flex-wrap: wrap;
-    margin-top: 15px;
+}
 
+.leftSection h2 {
+    font-size: 1.8rem;
+    color: rgb(226, 226, 234);
+}
+
+.leftSection p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #b3b2b2;
 }
 
 
-.projectBox button {
+
+.rightSection {
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.9rem;
-    min-width: 120px;
-    color: white;
+    background: none;
+    box-shadow: none;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 
-
-
-.blueButton,
-.demoButton {
-    font-family: "poppins";
-    font-weight: 500;
-    padding: 10px 13px;
-    background: #134984c1;
-}
-
-.blueButton:hover,
-.demoButton:hover {
-    background-color: #11365f;
-}
-
-.buttonContainer a {
-    text-decoration: none;
-}
-
-.projectBox button img {
-    width: 30px;
-    height: 30px;
-}
 
 
 .projectImage {
+    width: 100%;
+    max-width: 280px;
+    height: 250px;
     object-fit: contain;
-    margin-top: 20px;
-}
-
-.calcDescription {
-    margin-bottom: 30px;
+    filter: drop-shadow(0 0 6px rgba(0, 150, 255, 0.35));
 }
 
 
-@media screen and (max-width: 990px) {
-    .projectSection {
-        grid-template-columns: 1fr;   
+
+.demoButton {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(135deg, #f97316, #ef4444);
+    transition: 0.3s;
+}
+
+.demoButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+
+
+.techStack span {
+    position: relative;
+    padding-left: 14px;
+    font-weight: 500;
+}
+
+.techStack span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 7px;
+    background: #f97316;
+    box-shadow: 0 0 6px rgba(249, 115, 22, 0.7);
+
+    border-radius: 50%;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width:900px) {
+
+
+
+    .projectBox {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        gap: 20px;
     }
+
+    .leftSection {
+        width: 100%;
+    }
+
+    .rightSection {
+        width: 100%;
+    }
+
+    .projectImage {
+        width: 220px;
+        height: 220px;
+    }
+
 }
