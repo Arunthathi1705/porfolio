@@ -10,12 +10,12 @@ import bookImage from "../components/Assets/book-hunt.png";
 const Project = () => {
 
   const cardAnimation = {
-  hidden: { opacity: 0 },
-  visible: { 
-    opacity: 1,
-    transition: { duration: 0.5 }
-  }
-};
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { duration: 0.5 }
+    }
+  };
 
 
   return (
@@ -33,15 +33,13 @@ const Project = () => {
       </div>
 
       <div className="projectSection">
-
-        {/* BOOK HUNT */}
         <motion.div
           className="projectBox"
           variants={cardAnimation}
           initial="hidden"
           whileInView="visible"
-         viewport={{ once: true }}
-  transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
         >
           <div className="leftSection">
             <h2>Book Hunt</h2>
@@ -53,13 +51,13 @@ const Project = () => {
               CSS. Users can search books, explore details, and manage their
               personal reading wishlist.
             </p>
- <div className="techStack">
-    <span>Firebase</span>
-    <span>Firestore</span>
-    <span>TailwindCSS</span>
-    <span>Mantine UI</span>
-    <span>React.js</span>
-  </div>
+            <div className="techStack">
+              <span>Firebase</span>
+              <span>Firestore</span>
+              <span>TailwindCSS</span>
+              <span>Mantine UI</span>
+              <span>React.js</span>
+            </div>
             <a
               href="https://book-hunt-app.netlify.app/"
               target="_blank"
@@ -75,14 +73,13 @@ const Project = () => {
         </motion.div>
 
 
-        {/* POKEMON */}
         <motion.div
           className="projectBox"
           variants={cardAnimation}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-  transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5 }}
         >
           <div className="leftSection">
             <h2>PokéPeek</h2>
@@ -93,12 +90,12 @@ const Project = () => {
               LocalStorage to store user selections and improve user experience
               while navigating through large Pokémon datasets.
             </p>
-<div className="techStack">
-  <span>React.js</span>
-  <span>Mantine UI</span>
-  <span>API</span>
-  <span>JavaScript</span>
-</div>
+            <div className="techStack">
+              <span>React.js</span>
+              <span>Mantine UI</span>
+              <span>API</span>
+              <span>JavaScript</span>
+            </div>
 
             <a
               href="https://pokepeek-by-akalya.netlify.app/"
@@ -114,15 +111,13 @@ const Project = () => {
           </div>
         </motion.div>
 
-
-        {/* CALCULATOR */}
         <motion.div
           className="projectBox"
           variants={cardAnimation}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-  transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5 }}
         >
           <div className="leftSection">
             <h2>Calculator</h2>
@@ -132,12 +127,12 @@ const Project = () => {
               my understanding of React components, props, state management, and
               building interactive user interfaces with clean UI structure.
             </p>
-<div className="techStack">
-  <span>React.js</span>
-  <span>HTML</span>
-  <span>CSS</span>
-  <span>JavaScript</span>
-</div>
+            <div className="techStack">
+              <span>React.js</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
 
             <a
               href="https://calculator-by-akalya.netlify.app/"
@@ -161,7 +156,7 @@ const Project = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-  transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5 }}
         >
           <div className="leftSection">
             <h2>Portfolio</h2>
@@ -172,11 +167,11 @@ const Project = () => {
               responsive layout, smooth animations, and clean UI design.
             </p>
             <div className="techStack">
-  <span>React.js</span>
-  <span>HTML</span>
-  <span>CSS</span>
-  <span>JavaScript</span>
-</div>
+              <span>React.js</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
 
           </div>
 
